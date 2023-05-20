@@ -40,6 +40,9 @@ exports.tan = (degree) => {
 // };
 
 exports.generateRandomNumber = (size) => {
+  if (size === undefined)
+    throw new Error("Provide length for random number generation.");
+
   randomBytes(size, (err, buf) => {
     if (err) throw err;
     console.log(`${buf.length} bytes of random data: ${buf.toString("hex")}`);
