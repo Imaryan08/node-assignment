@@ -1,3 +1,5 @@
+const { randomBytes, randomInt } = require("crypto");
+
 exports.add = (num1, num2) => {
   console.log(`Sum of ${num1} and ${num2} is ${num1 + num2}`);
   return;
@@ -26,4 +28,27 @@ exports.cos = (degree) => {
 
 exports.tan = (degree) => {
   console.log(`tangent of ${degree} is ${Math.tan(degree).toFixed(2)}`);
+};
+
+// exports.generateRandomNumber = () => {
+//   const bytes = randomBytes(16);
+
+//   const randomHex = bytes.toString("hex");
+
+//   console.log(randomHex);
+//   console.log(randomHex.length);
+// };
+
+exports.generateRandomNumber = (size) => {
+  randomBytes(size, (err, buf) => {
+    if (err) throw err;
+    console.log(`${buf.length} bytes of random data: ${buf.toString("hex")}`);
+  });
+};
+
+exports.randomInteger = (limit) => {
+  randomInt(limit, (err, n) => {
+    if (err) throw err;
+    console.log(`Random number chosen from 0 to ${limit}: ${n}`);
+  });
 };
