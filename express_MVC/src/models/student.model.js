@@ -2,9 +2,10 @@ const mongoose = require("mongoose");
 
 const studentSchema = new mongoose.Schema(
   {
-    roll_id: { type: Number, reuired: true },
+    roll_id: { type: Number, required: true },
     current_batch: {
-      anyOf: [{ type: String }, { type: Number }],
+      type: String,
+      //   anyOf: [{ type: String }, { type: Number }],
       required: true,
     },
   },
