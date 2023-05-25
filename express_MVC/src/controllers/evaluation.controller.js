@@ -18,7 +18,24 @@ router.post("/", async (req, res) => {
 
 router.get("/", async (req, res) => {
   try {
-    const evaluations = await Evaluation.find().lean().exec();
+    const evaluations = await Evaluation.find()
+      .select("-createdAt -updatedAt")
+      .populate({
+        path: "instructor",
+        select: {
+          // _id: 0,
+          gender: 0,
+          date_of_birth: 0,
+          createdAt: 0,
+          updatedAt: 0,
+        },
+      })
+      .populate({
+        path: "batch_id",
+        select: { createdAt: 0, updatedAt: 0 },
+      })
+      .lean()
+      .exec();
     res.status(200).json({
       evaluations,
     });

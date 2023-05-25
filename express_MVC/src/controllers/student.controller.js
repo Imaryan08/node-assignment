@@ -18,12 +18,31 @@ router.post("/", async (req, res) => {
 
 router.get("/", async (req, res) => {
   try {
-    const students = await Student.find().lean().exec();
+    const students = await Student.find().populate("user").lean().exec();
     res.status(201).json({
       students,
     });
   } catch (error) {
     res.status(401).json({
+      error: error.message,
+    });
+  }
+});
+
+router.patch("/:id", async (req, res) => {
+  try {
+    const student = await Student.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+    })
+      .lean()
+      .exec();
+    res.status(201).json({
+      message: "student details updated",
+      student,
+    });
+  } catch (error) {
+    res.status(401).json({
+      message: "failed to update!",
       error: error.message,
     });
   }
