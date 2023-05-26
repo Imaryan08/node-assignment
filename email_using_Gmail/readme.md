@@ -1,6 +1,6 @@
 [stack overflow link](https://stackoverflow.com/questions/72626410/how-do-i-send-email-from-nodemailer-in-nodejs-using-gmail)
 
-
+[link to see other method of mail](https://www.courier.com/blog/how-to-send-emails-with-node-js)
 
 ## one way
 
