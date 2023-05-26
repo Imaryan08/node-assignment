@@ -2,6 +2,8 @@
 
 [link to see other method of mail](https://www.courier.com/blog/how-to-send-emails-with-node-js)
 
+[Freecodecamp link](https://www.freecodecamp.org/news/use-nodemailer-to-send-emails-from-your-node-js-server)
+
 ## one way
 
 less secure apps is deprecated util 14/06/2022
