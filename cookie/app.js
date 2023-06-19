@@ -23,6 +23,12 @@ app.get("/getcookie", (req, res) => {
   res.send("cookie read successfully");
 });
 
+// Delte cookie
+app.get("/delcookie", (req, res) => {
+  res.clearCookie();
+  res.send("cookie has been deleted successfully");
+});
+
 app.listen(8080, () => {
   console.log("server listening on 8080");
 });
