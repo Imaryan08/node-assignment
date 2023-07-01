@@ -51,7 +51,7 @@ router.post(
   async (req, res) => {
     try {
       const errors = validationResult(req);
-
+      
       if (errors.isEmpty()) {
         const user = await User.create(req.body);
 
