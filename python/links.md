@@ -1,2 +1,12 @@
 [Datatypes & Variables](https://zoom-lecture-recordings.s3.ap-south-1.amazonaws.com/85656072582/pt_da_unit_2_b24_1679581510000)
 [Python PSC](https://zoom-lecture-recordings.s3.ap-south-1.amazonaws.com/85656072582/pt_da_unit_2_b24_1680013588000)
+[Nested Loops](https://zoom-lecture-recordings.s3.ap-south-1.amazonaws.com/85656072582/pt_da_unit_2_b24_1680186535000)
+[PSC](https://zoom-lecture-recordings.s3.ap-south-1.amazonaws.com/85656072582/pt_da_unit_2_b24_1680272876000)
+
+### Python 
+
+[Intro to Programming, Datatypes and Variables in Python](https://zoom-lecture-recordings.s3.ap-south-1.amazonaws.com/85103830651/python_live_session_pt-da-16_1663252105000)
+[Datatypes and Variables in Python](https://zoom-lecture-recordings.s3.ap-south-1.amazonaws.com/85103830651/python_live_session_pt-da-16_1663338686000)
+[Operators and Conditional Statements](https://zoom-lecture-recordings.s3.ap-south-1.amazonaws.com/85103830651/python_live_session_pt-da-16_1663425112000)
+[]()
+[]()
