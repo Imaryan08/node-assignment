@@ -1,9 +1,16 @@
-const text = "I love apples";
+const text = "I love 2 apples";
 
-console.log(/[a-z]/.test("12345a"));
 
-console.log(/\d/.test("I have 2 apples"));
 
-console.log(/o{2}/.test("helloooo"));
+console.log(/\d/.test(text));  // TRUE
 
-const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
+
+
+// console.log(/[a-z]/.test("12345"));
+
+
+// console.log(/o{2}/.test("helloooo"));
+
+// const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;  
